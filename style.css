@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+	font-family: 'Avenir';
+	src: url("Avenir.ttc");
+}
+@font-face {
+	font-family: 'Avenir Next';
+	src: url("Avenir Next.ttc");
+}
+
+
+/*Desktop / Global view*/
+.slicknav_menu {
+	display: none;
+}
+
+#menu {
+	float: right;
+}
+
+#menu li {
+	display: inline-block;
+}
+
+#menu li a {
+	text-decoration: none;
+	 -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  	 -webkit-text-stroke-width: 0.75px;
+  	 -webkit-text-stroke-color: #2B2E34;
+	 font-size: 30px;
+	padding: 20px;
+}
+
+#logohuset {
+	width: 30%;
+	height: auto;
+}
+
+header {
+	padding: 10px 40px 40px 40px;
+	margin-bottom: 35px;
+	width: 95%;
+}
+
+body {
+	background-color: #E0F2FD;
+	font-family: 'Avenir';
+	max-width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.col {
+	float: left;
+	padding: 1%;
+}
+
+.col-lg {
+	width: 31.3%;
+}
+
+.col-lg img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.hero {
+	background-image: url("images/cykel_web.jpg");
+	padding: 50px 0px 72px 72px;
+	background-size: cover;
+}
+
+.subheading {
+	color: #fff;
+	font-weight: 9000;
+	font-size: 50px;
+	margin-bottom: -54px;
+}
+
+h1 {
+	color: #2B2E34;
+	font-family: 'Avenir Next';
+	font-size: 60px;
+	font-weight: 100;
+}
+
+.heroh1 {
+	color: #fff;
+	font-weight: 300;
+	font-size: 52px;
+	margin-bottom: -5px;
+}
+
+.headingbodycopy {
+	color: #fff;
+	margin-right: 20%;
+	margin-bottom: 40px;
+}
+
+.letstalk {
+	background-color: #f1474c;
+	padding: 8px 30px;
+	text-decoration: none;
+	color: #fff;
+}
+
+
+footer {
+background-color: #E0F2FD;
+margin-bottom: 45px;
+}
+
+.footero {
+padding: 10px;
+  align-items: center;
+  justify-content: center
+}
+
+/*Tablet view*/
+
+@media (max-width: 768px){
+	
+	.slicknav_menu {
+	display: none;
+}
+	
+	#menu li {
+		display: block;
+		text-align: right;
+	}
+	
+	.col-md {
+		width: 48%;
+	}
+}
+
+/*Header issue*/
+@media (max-width: 687px){
+	
+	.slicknav_menu {
+	display: none;
+}
+	
+	#menu li {
+		display: block;
+		text-align: right;
+	}
+	
+	header {
+		margin-bottom: 60px;
+	}
+	
+}
+
+/*Mobile view*/
+
+@media (max-width: 400px){
+	
+	header {
+		margin-bottom: 0px;
+	}
+	
+	.slicknav_menu {
+	display: block;
+}
+
+	#menu {
+		display: none;
+	}
+	
+	.col-sm {
+		width: 100%;
+	}
+	
+	.col {
+		padding: 0%;
+	}
+}
